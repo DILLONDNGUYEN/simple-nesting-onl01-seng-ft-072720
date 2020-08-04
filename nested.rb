@@ -84,9 +84,9 @@ def adding_matz
         }
      }
   programmer_hash.merge[:yukihiro_matsumoto => {known_for: "Ruby", languages: ["LISP", "C"]}]
-
-end
 adding_matz
+end
+
 
 #operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash
 
