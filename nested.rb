@@ -1,3 +1,4 @@
+#hopper operates on the programmer_hash and returns the value of the :grace_hopper key
 
 def hopper
 	programmer_hash = 
@@ -15,13 +16,12 @@ def hopper
           :languages => ["C"]
         }
      }
-
-
+  programmer_hash[:grace_hopper]
 end
 
+#operates on the programmer_hash and returns the value of what Alan Kay is known for
+# What combination of keys would you use to return the value of the :known_for key of :alan_kay?
 def alan_kay_is_known_for
-	# What combination of keys would you use to return the value of the :known_for key of :alan_kay?
-	
 	programmer_hash = 
  		{
         :grace_hopper => {
@@ -37,7 +37,10 @@ def alan_kay_is_known_for
           :languages => ["C"]
         }
      }
+  programmer_hash[:alan_kay][:known_for]
 end
+
+#operates on the programmer_hash and returns the value of Dennis Ritchie's language as a string
 
 def dennis_ritchies_language
 	programmer_hash = 
@@ -55,15 +58,16 @@ def dennis_ritchies_language
           :languages => ["C"]
         }
      }
+  programmer_hash[:dennis_ritchie][:languages][0]
 end
 
-def adding_matz
+#operates on the programmer_hash and adds a key/value pair to the top level of the hash, returning the newly-added-to hash
 # add the following information to the top level of programmer_hash
 # :yukihiro_matsumoto => {
 #   :known_for => "Ruby",
 #    :languages => ["LISP", "C"]
 # }
-
+def adding_matz
 	programmer_hash = 
  		{
         :grace_hopper => {
@@ -79,9 +83,12 @@ def adding_matz
           :languages => ["C"]
         }
      }
-
-    
+  programmer_hash[:yukihiro_matsumoto. => {known_for: "Ruby", languages: ["LISP", "C"]}]
+  programmer_hash
 end
+adding_matz
+
+#operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash
 
 def changing_alan
 	programmer_hash = 
@@ -104,6 +111,8 @@ def changing_alan
      
      
 end
+
+#operates on the programmer_hash and adds 'Assembly' to Dennis Ritchie's languages, returning the newly-added-to-hash
 
 def adding_to_dennis
 	programmer_hash = 
